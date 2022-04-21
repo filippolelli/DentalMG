@@ -46,6 +46,7 @@ app.post('/', (req, res) => {
   doc.image(canvas.toBuffer('image/png'), {fit: [200,200],align:'center'});
 
   doc.end();
+  res.sendStatus(200);
   //res.redirect("/home.html");
   
 });
