@@ -1,0 +1,37 @@
+body{
+    
+    overflow: "hidden"
+}
+
+.denti {
+    display: grid;
+  
+    /* Set horizontal alignment of items in, case they have a diffrent width. */
+    /* justify-items: start | end | center | stretch (default);*/
+    justify-items: center;
+  
+    /* Set vertical alignment of items, in case they have a diffrent height. */
+    /* align-items: start | end | center | stretch (default); */
+    align-items: center;
+  }
+  
+  .denti > * {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+#canvas {
+    -webkit-touch-callout: none;  /*Evita di selezionare elementi per sbaglio mentre si disegna*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#canvas {
+    float:left;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; 
+    touch-action: "none";
+}
