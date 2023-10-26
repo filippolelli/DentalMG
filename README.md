@@ -1,2 +1,2 @@
 # DentalMG
-Node.js server that receives patient datas and generate a PDF file. (used in dental office)
+Node.js application that creates a PDF file filled with patients datas in a dental office.
